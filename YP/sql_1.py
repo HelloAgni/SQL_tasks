@@ -29,7 +29,7 @@ CREATE TABLE IF NOT EXISTS movies(
 );
 ''')
 
-# -Create table-
+# -Create table old version-
 # cur.execute("CREATE TABLE IF NOT EXISTS zero(id PRIMARY KEY, text TEXT)")
 # -Delete table-
 # cur.execute("DROP TABLE zero")
