@@ -29,11 +29,6 @@ CREATE TABLE IF NOT EXISTS movies(
 );
 ''')
 
-# -Create table old version-
-# cur.execute("CREATE TABLE IF NOT EXISTS zero(id PRIMARY KEY, text TEXT)")
-# -Delete table-
-# cur.execute("DROP TABLE zero")
-
 # -Version 2-
 # -Create table with cur.executescript-
 # cur.executescript('''
@@ -42,7 +37,6 @@ CREATE TABLE IF NOT EXISTS movies(
 #     name TEXT,
 #     bithday_year INTEGER
 # );
-
 # CREATE TABLE IF NOT EXISTS movies(
 #     id INTEGER PRIMARY KEY,
 #     name TEXT,
@@ -51,6 +45,10 @@ CREATE TABLE IF NOT EXISTS movies(
 # );
 # ''')
 
+# -Create table old version-
+# cur.execute("CREATE TABLE IF NOT EXISTS zero(id PRIMARY KEY, text TEXT)")
+# -Delete table-
+# cur.execute("DROP TABLE zero")
 
 # --Add data in table--
 # -Add data Version 1-
