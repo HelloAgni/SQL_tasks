@@ -3,6 +3,7 @@ import sqlite3
 con = sqlite3.connect('db.sqlite')
 cur = con.cursor()
 
+# For SQLite_db and Postgres_db
 """
 CREATE TABLE IF NOT EXISTS wrappers(
 id INTEGER PRIMARY KEY,
