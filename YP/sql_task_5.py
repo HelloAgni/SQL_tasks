@@ -33,6 +33,7 @@ VALUES
 """
 
 # Highest price of ice cream DESC
+# Works only for SQL
 cur.execute('''
 SELECT ice_cream4.name,
 	   categories4.slug,
