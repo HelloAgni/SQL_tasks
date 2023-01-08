@@ -3,6 +3,12 @@ import sqlite3
 con = sqlite3.connect('db.sqlite')
 cur = con.cursor()
 
+# Inspect SQL version
+cur.execute('''
+SELECT sqlite_version();
+''')
+print([x for x in cur])
+
 # Inspect SQLite_db and get all tables names
 cur.execute("SELECT name FROM sqlite_master WHERE type='table';")
 tables_name = [x[0] for x in cur]
