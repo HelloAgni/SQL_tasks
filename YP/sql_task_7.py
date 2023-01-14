@@ -18,14 +18,14 @@ ADD COLUMN is_on_main INTEGER;
 ''')
 
 # SQLite 3.26+
-# cur.execute('''
-# ALTER TABLE ice_cream8
-# RENAME COLUMN name TO specification
-# ''')
+cur.execute('''
+ALTER TABLE ice_cream8
+RENAME COLUMN name TO specification
+''')
 
-# cur.executescript('''
-# DROP TABLE ice_cream8;
-# ''')
+cur.executescript('''
+DROP TABLE ice_cream8;
+''')
 
 con.commit()
 con.close()
