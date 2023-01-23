@@ -10,7 +10,7 @@
 
 -- PostgresSQL
 
-CREATE TABLE cycling(
+CREATE TABLE IF NOT EXISTS cycling(
     id serial PRIMARY KEY,
 	hours DECIMAL(9,2)
 );
