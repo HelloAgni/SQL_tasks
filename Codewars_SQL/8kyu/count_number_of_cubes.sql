@@ -22,6 +22,6 @@ VALUES
 SELECT n,
 CASE
     WHEN n = 0 THEN 1
-    ELSE POWER(n + 1, 3) - POWER((n - 1), 3)
-END::int AS res
+    ELSE CAST(POWER(n + 1, 3) - POWER(n - 1, 3) AS INT)
+END AS res
 FROM squares
